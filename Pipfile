@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+fastapi-sqlalchemy = "*"
+pydantic = "*"
+alembic = "*"
+psycopg2 = "*"
+uvicorn = "*"
+python-dotenv = "*"
+databases = {extras = ["postgresql"], version = "*"}
+asyncpg = "*"
+apscheduler = "*"
+aiofiles = "*"
+
+[dev-packages]
+flake8 = "*"
+pytest = "*"
+black = "*"
+
+[requires]
+python_version = "3.7.5"
+
+[pipenv]
+allow_prereleases = true
